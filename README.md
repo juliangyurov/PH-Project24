@@ -1,32 +1,27 @@
-## [Project 23: Swifty Ninja](https://www.hackingwithswift.com/read/23/overview)
+## [Project 24: Swift Strings](https://www.hackingwithswift.com/read/24/overview)
 Written by [Paul Hudson](https://www.hackingwithswift.com/about)  ![twitter16](https://github.com/juliangyurov/PH-Project6a/assets/13259596/445c8ea0-65c4-4dba-8e1f-3f2750f0ef51)
   [@twostraws](https://twitter.com/twostraws)
 
-**Description:** Learn to draw shapes in SpriteKit while making a fun and tense slicing game.
+**Description:** Dive deep into how strings work in Swift, and learn how to add formatting on top.
 
 - Setting up
 
-- Basics quick start: `SKShapeNode`
+- Strings are not arrays
 
-- Shaping up for action: `CGPath` and `UIBezierPath`
+- Working with strings in Swift
 
-- Enemy or bomb: `AVAudioPlayer`
-
-- Follow the sequence
-
-- Slice to win
-
-- Game over, man: `SKTexture`
+- Formatting strings with `NSAttributedString`
 
 - Wrap up
 
+
   
-## [Review what you learned](https://www.hackingwithswift.com/review/hws/project-23-swifty-ninja)
+## [Review what you learned](https://www.hackingwithswift.com/review/hws/project-24-swift-strings)
 
 **Challenge**
 
-1. Try removing the magic numbers in the `createEnemy()` method. Instead, define them as constant properties of your class, giving them useful names.
+1. Create a String extension that adds a `withPrefix()` method. If the string already contains the prefix it should return itself; if it doesn’t contain the prefix, it should return itself with the prefix added. For example: "pet".withPrefix("car") should return “carpet”.
 
-2. Create a new, fast-moving type of enemy that awards the player bonus points if they hit it.
-
-3. Add a “Game over” sprite node to the game scene when the player loses all their lives.
+2. Create a String extension that adds an `isNumeric` property that returns true if the string holds any sort of number. Tip: creating a Double from a String is a failable initializer.
+   
+3. Create a String extension that adds a lines property that returns an array of all the lines in a string. So, “this\nis\na\ntest” should return an array with four elements.
